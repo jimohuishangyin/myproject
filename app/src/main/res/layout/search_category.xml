@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#34373B"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/search_turing"
+            style="@style/main_tab_text"
+            android:checked="true"
+            android:tag="1"
+            android:text="改装" />
+
+        <RadioButton
+            android:id="@+id/search_care"
+            style="@style/main_tab_text"
+            android:tag="2"
+            android:text="养护" />
+
+        <RadioButton
+            android:id="@+id/search_video"
+            style="@style/main_tab_text"
+            android:tag="3"
+            android:text="美图" />
+
+        <RadioButton
+            android:id="@+id/search_girl"
+            style="@style/main_tab_text"
+            android:tag="4"
+            android:text="视频" />
+
+        <RadioButton
+            android:id="@+id/search_message"
+            style="@style/main_tab_text"
+            android:tag="5"
+            android:text="车讯" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/search_cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_title"
+        android:scaleType="matrix" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_title" />
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/loading_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/dialog_loading"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/pull_to_load_text"
+                android:src="@drawable/defalut_load"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/pull_to_load_text"
+                android:src="@drawable/loadingtext"
+                />
+
+        </RelativeLayout>-->
+
+        <!--<ProgressBar
+            android:id="@+id/pull_to_load_progress"
+            style="@style/myProgressBarStyleLarge"
+            android:indeterminateDuration="1200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/pull_to_load_text"
+            android:layout_marginRight="10dp"
+            android:indeterminate="true" />-->
+
+
+
+        <ImageView
+            android:id="@+id/frame_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="加载中..." />
+    </LinearLayout>
+
+</LinearLayout>

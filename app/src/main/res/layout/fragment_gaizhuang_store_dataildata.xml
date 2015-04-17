@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gaizhuang_store_detail_pic"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="厦门泰赫汽车改装-附件星工场"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_wangzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="网 址：http://www.wanchezhijia.com/store/2799.html"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Q Q:1234567"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="微 信：WEIXING"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="电话：12345678901"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="地区：福建|厦门|思明"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="地址：厦门市体育路36号2号库二层A区"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="类别：改装店"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/gaizhuang_store_detail_Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="描述：978MOTORING汽车服务中心于2014年成立并试营业，携手WingPower，FJSCC福建超跑俱乐部，为您的爱车提供一站式的完美服务。"
+                    android:textColor="@android:color/black" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+</LinearLayout>

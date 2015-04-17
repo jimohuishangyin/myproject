@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xmyunyou.wcd.ui.view.LoadMoreView
+        android:id="@+id/user_detail_list"
+        style="@style/common_list"
+        />
+
+
+</FrameLayout>

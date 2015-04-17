@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#34373B"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gaizhuang_store_detail_data"
+                    style="@style/main_tab_text"
+                    android:checked="true"
+                    android:tag="1"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/gaizhuang_store_detail_info"
+                    style="@style/main_tab_text"
+                    android:tag="2"
+                    android:text="简介" />
+
+                <RadioButton
+                    android:id="@+id/gaizhuang_store_detail_product"
+                    style="@style/main_tab_text"
+                    android:tag="3"
+                    android:text="作品" />
+                <RadioButton
+                    android:id="@+id/gaizhuang_store_detail_comment"
+                    style="@style/main_tab_text"
+                    android:tag="4"
+                    android:text="评价" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/gaizhuang_store_detail_cursor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="@color/bg_title"
+                android:scaleType="matrix" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/bg_title" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/gaizhuang_store_detail_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+
+</LinearLayout>

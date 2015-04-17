@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <include layout="@layout/common_title_bar"></include>
+
+
+    <com.xmyunyou.wcd.ui.view.LoadMoreListView
+        android:id="@+id/news_list"
+        style="@style/common_list">
+        </com.xmyunyou.wcd.ui.view.LoadMoreListView>
+
+
+</LinearLayout>

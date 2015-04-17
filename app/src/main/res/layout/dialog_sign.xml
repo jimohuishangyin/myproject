@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/sign_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_icon"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/sign_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/adapter_car_user_pic"
+                    android:layout_marginLeft="2dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="#8DB1BD"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="一个喜欢速递的人"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/sign_medal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/level"
+                        />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/level"
+                        />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/level"
+                        />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/level"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/sign_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="签到次数：15"
+                        />
+
+                    <TextView
+                        android:id="@+id/sign_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="15dp"
+                        android:text="累计签到：15天"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_title"
+            />
+
+        <EditText
+            android:id="@+id/sign_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="8"
+            android:gravity="left|top"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:hint="小手一抖，积分到手"
+            android:background="@drawable/bg_sign_input"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/sign_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+         style="@style/common_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sign_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_title"
+            android:textSize="14sp"
+            android:text="签到"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/sign_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F9F9F9"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

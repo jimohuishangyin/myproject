@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/store_comment_bg"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/RatingBar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:numStars="5"
+                android:paddingTop="10dp"
+                android:stepSize="1" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/store_choose"
+                android:background="#CECECE" />
+
+            <RadioGroup
+                android:id="@+id/store_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/store_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_store_detail_zan"/>
+
+                <RadioButton
+                    android:id="@+id/store_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:background="@drawable/selector_store_detail_bad"/>
+
+            </RadioGroup>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/selector_store_detail_zan"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/store_bad"
+                android:layout_marginRight="20dp"
+                android:id="@+id/store_good"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_store_detail_bad"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/store_bad" />-->
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/submit_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/bgwhite_input"
+            android:gravity="top"
+            android:lineSpacingExtra="3dp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/store_comment_bg"
+            android:text="发表评论"
+            android:textColor="#787878" />
+
+    </LinearLayout>
+
+</LinearLayout>

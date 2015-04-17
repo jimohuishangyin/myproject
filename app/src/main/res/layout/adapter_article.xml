@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="4dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/adapter_turing_pic"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/adapter_brod"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_icon" />
+
+            <TextView
+                android:id="@+id/adapter_turing_category"
+                android:layout_width="55dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_outline_classify"
+                android:gravity="center"
+                android:text="轻度改装"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/adapter_turing_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="1dp"
+                    android:lines="2"
+                    android:text="难得的闲暇时光 达喀尔拉力第六赛段战报"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/adapter_delete_fav"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/xx"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/adapter_turing_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/adapter_turing_comment"
+                    android:drawableLeft="@drawable/ico_view"
+                    android:drawablePadding="5dp"
+                    android:text="2145"
+                    android:textColor="#B1B1B1" />
+
+                <TextView
+                    android:id="@+id/adapter_turing_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/ico_comment"
+                    android:drawablePadding="5dp"
+                    android:text="2145"
+                    android:textColor="#B1B1B1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D5D5D5" />
+</LinearLayout>

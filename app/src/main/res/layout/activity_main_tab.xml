@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_title"
+        >
+
+        <!--<ImageView
+            android:id="@+id/main_user"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/main_title_user"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            />-->
+
+        <ImageView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_title"
+            android:layout_centerInParent="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/main_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/main_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+    <!--导航-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#34373B"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/main_turing"
+                style="@style/main_tab_text"
+                android:text="改装"
+                android:checked="true"
+                android:tag="1"
+                />
+
+            <RadioButton
+                android:id="@+id/main_care"
+                style="@style/main_tab_text"
+                android:text="养护"
+                android:tag="2"
+                />
+
+            <RadioButton
+                android:id="@+id/main_video"
+                style="@style/main_tab_text"
+                android:text="视频"
+                android:tag="3"
+                />
+
+            <RadioButton
+                android:id="@+id/main_girl"
+                style="@style/main_tab_text"
+                android:text="美图"
+                android:tag="4"
+                />
+            <RadioButton
+                android:id="@+id/main_message"
+                style="@style/main_tab_text"
+                android:text="车讯"
+                android:tag="5"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/main_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/bg_title"
+            android:layout_gravity="bottom"
+            android:scaleType="matrix" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_title" />
+
+        </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:flipInterval="30"
+        android:layout_weight="1"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

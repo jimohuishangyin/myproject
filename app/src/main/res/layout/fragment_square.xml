@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:id="@+id/square_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F3F3F3"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/common_line"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/square_integral"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        style="@style/hot_car_model_text"
+                        android:text="积分兑换" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hot_car_model_jf" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#DCDBDB" />
+
+                <FrameLayout
+                    android:id="@+id/square_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        style="@style/hot_car_model_text"
+                        android:text="排行榜" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hot_car_model_range" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/common_line"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView style="@style/common_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/hot_car_model_text"
+                    android:text="社区精华" />
+
+                <com.xmyunyou.wcd.ui.view.LoadMoreGridView
+                    android:id="@+id/square_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    item:item_margin="5"
+                    item:numColumns="2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+
+</LinearLayout>

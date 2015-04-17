@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            style="@style/user_label"
+            android:text="用户名"
+            />
+
+        <EditText
+            android:id="@+id/forget_name"
+            style="@style/user_et"
+            android:hint="请输入用户名"
+            />
+
+        <TextView
+            style="@style/user_label"
+            android:text="邮箱"
+            />
+
+        <EditText
+            android:id="@+id/forget_email"
+            style="@style/user_et"
+            android:hint="请输入注册时的邮箱"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/bg_title"
+            android:textSize="13sp"
+            android:lineSpacingExtra="2dp"
+            android:text="注：如果您提交的用户名和邮箱正确的话，系统将会重置您的密码并发送到您的邮箱上。"
+            />
+
+        <Button
+            android:id="@+id/btn_forget"
+            style="@style/user_button"
+            android:text="提交"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

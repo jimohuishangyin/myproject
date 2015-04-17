@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"></include>
+
+    <ScrollView
+        android:id="@+id/good_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/news_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/news_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp" />
+
+
+            <!--普通详情-->
+            <WebView
+                android:id="@+id/news_detail_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></WebView>
+
+            <!--视频部分-->
+            <LinearLayout
+                android:id="@+id/news_video_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+
+                >
+
+                <FrameLayout
+                    android:id="@+id/news_video_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/news_video_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:src="@drawable/default_icon"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ico_video"
+                        android:layout_gravity="center"
+                        />
+
+                    </FrameLayout>
+
+                <TextView
+                    android:id="@+id/news_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#F2F2F2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:hint="发表"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/user_comment"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

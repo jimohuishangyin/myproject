@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/user_big" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageview"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#415362"
+                    android:textSize="12sp"
+                    android:text="test"/>
+
+                <TextView
+                    android:id="@+id/comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/list_line"
+                    android:text="2015-04-14"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="2dp"
+                android:padding="5dp"
+                android:text="外观方面，揽胜SV Autobiography前进气格栅采用了熏黑的处理，其格栅内部造型也采用了与普通版车型不同的设计，同时，前格栅细节部分镀铬材料的点缀也使新车前脸看起来更加精致。此外，新车可为客户提供独特的双色车身涂装，其中共九种颜色的组合搭配也为客户提供了更加个性的选择空间。"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

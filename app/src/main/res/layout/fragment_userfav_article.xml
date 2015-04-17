@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:id="@+id/userfav_article_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.xmyunyou.wcd.ui.view.LoadMoreView
+            android:id="@+id/userfav_article_list"
+            style="@style/common_list" />
+
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+
+</LinearLayout>

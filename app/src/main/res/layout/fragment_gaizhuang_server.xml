@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <com.xmyunyou.wcd.ui.view.AutoScrollViewPager
+                    android:id="@+id/gaizhuang_img_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_banner_title"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gaizhuang_img_text"
+                        style="@style/banner_text" />
+
+                    <LinearLayout
+                        android:id="@+id/gaizhuang_img_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#F4F4F4" />
+
+            <com.xmyunyou.wcd.ui.view.ShowGridView
+                android:id="@+id/gaizhuang_server_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEBEB"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@null"
+                android:minWidth="60dp"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F4F4F4"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,435 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	android:versionCode
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:6:5
+	android:name
+		ADDED from AndroidManifest.xml:6:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:7:5
+	android:name
+		ADDED from AndroidManifest.xml:7:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:8:5
+	android:name
+		ADDED from AndroidManifest.xml:8:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:9:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.READ_LOGS
+ADDED from AndroidManifest.xml:23:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+supports-screens
+ADDED from AndroidManifest.xml:30:5
+	android:largeScreens
+		ADDED from AndroidManifest.xml:32:9
+	android:smallScreens
+		ADDED from AndroidManifest.xml:35:9
+	android:normalScreens
+		ADDED from AndroidManifest.xml:33:9
+	android:resizeable
+		ADDED from AndroidManifest.xml:34:9
+	android:anyDensity
+		ADDED from AndroidManifest.xml:31:9
+application
+ADDED from AndroidManifest.xml:37:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+	android:label
+		ADDED from AndroidManifest.xml:42:9
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:40:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:39:9
+	android:icon
+		ADDED from AndroidManifest.xml:41:9
+	android:theme
+		ADDED from AndroidManifest.xml:43:9
+	android:name
+		ADDED from AndroidManifest.xml:38:9
+service#com.baidu.location.f
+ADDED from AndroidManifest.xml:44:9
+	android:enabled
+		ADDED from AndroidManifest.xml:46:13
+	android:process
+		ADDED from AndroidManifest.xml:47:13
+	android:name
+		ADDED from AndroidManifest.xml:45:13
+activity#com.xmyunyou.wcd.ui.WelcomActivity_
+ADDED from AndroidManifest.xml:50:9
+	android:label
+		ADDED from AndroidManifest.xml:52:13
+	android:name
+		ADDED from AndroidManifest.xml:51:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:53:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:54:17
+	android:name
+		ADDED from AndroidManifest.xml:54:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:56:17
+	android:name
+		ADDED from AndroidManifest.xml:56:27
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from AndroidManifest.xml:60:9
+	android:value
+		ADDED from AndroidManifest.xml:62:13
+	android:name
+		ADDED from AndroidManifest.xml:61:13
+receiver#com.baidu.android.pushservice.PushServiceReceiver
+ADDED from AndroidManifest.xml:64:9
+	android:process
+		ADDED from AndroidManifest.xml:66:13
+	android:name
+		ADDED from AndroidManifest.xml:65:13
+intent-filter#android.intent.action.BOOT_COMPLETED+android.net.conn.CONNECTIVITY_CHANGE+com.baidu.android.pushservice.action.frontia.user+com.baidu.android.pushservice.action.media.CLICK+com.baidu.android.pushservice.action.notification.SHOW
+ADDED from AndroidManifest.xml:67:13
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:68:17
+	android:name
+		ADDED from AndroidManifest.xml:68:25
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:69:17
+	android:name
+		ADDED from AndroidManifest.xml:69:25
+action#com.baidu.android.pushservice.action.notification.SHOW
+ADDED from AndroidManifest.xml:70:17
+	android:name
+		ADDED from AndroidManifest.xml:70:25
+action#com.baidu.android.pushservice.action.media.CLICK
+ADDED from AndroidManifest.xml:71:17
+	android:name
+		ADDED from AndroidManifest.xml:71:25
+action#com.baidu.android.pushservice.action.frontia.user
+ADDED from AndroidManifest.xml:72:17
+	android:name
+		ADDED from AndroidManifest.xml:72:25
+receiver#com.baidu.android.pushservice.RegistrationReceiver
+ADDED from AndroidManifest.xml:75:9
+	android:process
+		ADDED from AndroidManifest.xml:77:13
+	android:name
+		ADDED from AndroidManifest.xml:76:13
+intent-filter#com.baidu.android.pushservice.action.BIND_SYNC+com.baidu.android.pushservice.action.METHOD
+ADDED from AndroidManifest.xml:78:13
+action#com.baidu.android.pushservice.action.METHOD
+ADDED from AndroidManifest.xml:79:17
+	android:name
+		ADDED from AndroidManifest.xml:79:25
+action#com.baidu.android.pushservice.action.BIND_SYNC
+ADDED from AndroidManifest.xml:80:17
+	android:name
+		ADDED from AndroidManifest.xml:80:25
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:82:13
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:83:17
+	android:name
+		ADDED from AndroidManifest.xml:83:25
+data
+ADDED from AndroidManifest.xml:85:17
+	android:scheme
+		ADDED from AndroidManifest.xml:85:23
+service#com.baidu.android.pushservice.PushService
+ADDED from AndroidManifest.xml:89:9
+	android:process
+		ADDED from AndroidManifest.xml:92:13
+	android:exported
+		ADDED from AndroidManifest.xml:91:13
+	android:name
+		ADDED from AndroidManifest.xml:90:13
+receiver#com.xmyunyou.wcd.baidu.BaiduFrontiaPushMessageReceiver
+ADDED from AndroidManifest.xml:94:9
+	android:name
+		ADDED from AndroidManifest.xml:94:19
+intent-filter#com.baidu.android.pushservice.action.MESSAGE+com.baidu.android.pushservice.action.RECEIVE+com.baidu.android.pushservice.action.notification.CLICK
+ADDED from AndroidManifest.xml:95:13
+action#com.baidu.android.pushservice.action.MESSAGE
+ADDED from AndroidManifest.xml:98:17
+	android:name
+		ADDED from AndroidManifest.xml:98:25
+action#com.baidu.android.pushservice.action.RECEIVE
+ADDED from AndroidManifest.xml:100:17
+	android:name
+		ADDED from AndroidManifest.xml:100:25
+action#com.baidu.android.pushservice.action.notification.CLICK
+ADDED from AndroidManifest.xml:102:17
+	android:name
+		ADDED from AndroidManifest.xml:102:25
+activity#com.baidu.frontia.activity.share.FrontiaLocalShareActivity
+ADDED from AndroidManifest.xml:106:9
+	android:launchMode
+		ADDED from AndroidManifest.xml:109:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:108:13
+	android:name
+		ADDED from AndroidManifest.xml:107:13
+activity#com.baidu.frontia.activity.share.FrontiaSocialOAuthActivity
+ADDED from AndroidManifest.xml:114:9
+	android:name
+		ADDED from AndroidManifest.xml:114:19
+meta-data#BaiduMobAd_STAT_ID
+ADDED from AndroidManifest.xml:118:9
+	android:value
+		ADDED from AndroidManifest.xml:120:13
+	android:name
+		ADDED from AndroidManifest.xml:119:13
+meta-data#BaiduMobAd_CHANNEL
+ADDED from AndroidManifest.xml:123:9
+	android:value
+		ADDED from AndroidManifest.xml:125:13
+	android:name
+		ADDED from AndroidManifest.xml:124:13
+activity#com.xmyunyou.wcd.ui.user.LoginActivity_
+ADDED from AndroidManifest.xml:128:9
+	android:label
+		ADDED from AndroidManifest.xml:130:13
+	android:name
+		ADDED from AndroidManifest.xml:129:13
+activity#com.xmyunyou.wcd.ui.car.CommentActivity_
+ADDED from AndroidManifest.xml:131:9
+	android:name
+		ADDED from AndroidManifest.xml:131:19
+activity#com.xmyunyou.wcd.ui.user.UserCenterActivity
+ADDED from AndroidManifest.xml:132:9
+	android:name
+		ADDED from AndroidManifest.xml:132:19
+activity#com.xmyunyou.wcd.ui.user.RegisterActivity
+ADDED from AndroidManifest.xml:133:9
+	android:name
+		ADDED from AndroidManifest.xml:133:19
+activity#com.xmyunyou.wcd.ui.user.UserSetingsActivity
+ADDED from AndroidManifest.xml:134:9
+	android:name
+		ADDED from AndroidManifest.xml:134:19
+activity#com.xmyunyou.wcd.ui.user.SettingsAboutActivity
+ADDED from AndroidManifest.xml:135:9
+	android:name
+		ADDED from AndroidManifest.xml:135:19
+activity#com.xmyunyou.wcd.ui.user.SettingsOpinionActivity
+ADDED from AndroidManifest.xml:136:9
+	android:name
+		ADDED from AndroidManifest.xml:136:19
+activity#com.xmyunyou.wcd.ui.user.OpinionFeedbacksActivity
+ADDED from AndroidManifest.xml:137:9
+	android:name
+		ADDED from AndroidManifest.xml:137:19
+activity#com.xmyunyou.wcd.ui.user.UserPwdChangeActivity
+ADDED from AndroidManifest.xml:138:9
+	android:name
+		ADDED from AndroidManifest.xml:138:19
+activity#com.xmyunyou.wcd.ui.search.SearchActivity
+ADDED from AndroidManifest.xml:139:9
+	android:name
+		ADDED from AndroidManifest.xml:139:19
+activity#com.xmyunyou.wcd.ui.search.SearchProductsActivity
+ADDED from AndroidManifest.xml:140:9
+	android:name
+		ADDED from AndroidManifest.xml:140:19
+activity#com.xmyunyou.wcd.ui.search.SearchCarActivity
+ADDED from AndroidManifest.xml:141:9
+	android:name
+		ADDED from AndroidManifest.xml:141:19
+activity#com.xmyunyou.wcd.ui.gaizhuang.GaizhuangStopDetailActivity
+ADDED from AndroidManifest.xml:142:9
+	android:name
+		ADDED from AndroidManifest.xml:142:19
+activity#com.xmyunyou.wcd.ui.user.FeedBackDetailActivity
+ADDED from AndroidManifest.xml:143:9
+	android:name
+		ADDED from AndroidManifest.xml:143:19
+activity#com.xmyunyou.wcd.ui.user.ForgetPwdActivity
+ADDED from AndroidManifest.xml:144:9
+	android:name
+		ADDED from AndroidManifest.xml:144:19
+activity#com.xmyunyou.wcd.ui.CityList.CityListActivity
+ADDED from AndroidManifest.xml:145:9
+	android:name
+		ADDED from AndroidManifest.xml:145:19
+activity#com.xmyunyou.wcd.ui.baidu.AddressActivity
+ADDED from AndroidManifest.xml:146:9
+	android:name
+		ADDED from AndroidManifest.xml:146:19
+activity#com.xmyunyou.wcd.ui.user.UserFavactivity
+ADDED from AndroidManifest.xml:147:9
+	android:name
+		ADDED from AndroidManifest.xml:147:19
+activity#com.xmyunyou.wcd.ui.user.UserPostsActivity
+ADDED from AndroidManifest.xml:148:9
+	android:name
+		ADDED from AndroidManifest.xml:148:19
+activity#com.xmyunyou.wcd.ui.user.UserJifenActivity
+ADDED from AndroidManifest.xml:149:9
+	android:name
+		ADDED from AndroidManifest.xml:149:19
+activity#com.xmyunyou.wcd.ui.user.UserMycarActivity
+ADDED from AndroidManifest.xml:150:9
+	android:name
+		ADDED from AndroidManifest.xml:150:19
+activity#com.xmyunyou.wcd.ui.MainActivity
+ADDED from AndroidManifest.xml:151:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:153:13
+	android:name
+		ADDED from AndroidManifest.xml:152:13
+activity#com.xmyunyou.wcd.ui.gaizhuang.MainGaizhuangActivity
+ADDED from AndroidManifest.xml:154:9
+	android:name
+		ADDED from AndroidManifest.xml:154:19
+activity#com.xmyunyou.wcd.ui.gaizhuang.GaizhuangServerActivity
+ADDED from AndroidManifest.xml:155:9
+	android:name
+		ADDED from AndroidManifest.xml:155:19
+activity#com.xmyunyou.wcd.ui.MainTabActivity_
+ADDED from AndroidManifest.xml:156:9
+	android:name
+		ADDED from AndroidManifest.xml:156:19
+activity#com.xmyunyou.wcd.ui.car.NewsListActivity_
+ADDED from AndroidManifest.xml:157:9
+	android:name
+		ADDED from AndroidManifest.xml:157:19
+activity#com.xmyunyou.wcd.ui.car.NewsDetailActivity_
+ADDED from AndroidManifest.xml:158:9
+	android:label
+		ADDED from AndroidManifest.xml:160:13
+	android:name
+		ADDED from AndroidManifest.xml:159:13
+activity#com.xmyunyou.wcd.ui.car.VideoDetailActivity_
+ADDED from AndroidManifest.xml:161:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:164:13
+	android:label
+		ADDED from AndroidManifest.xml:163:13
+	android:theme
+		ADDED from AndroidManifest.xml:165:13
+	android:name
+		ADDED from AndroidManifest.xml:162:13
+activity#com.xmyunyou.wcd.ui.car.PicDetailActivity_
+ADDED from AndroidManifest.xml:166:9
+	android:label
+		ADDED from AndroidManifest.xml:168:13
+	android:name
+		ADDED from AndroidManifest.xml:167:13
+activity#com.xmyunyou.wcd.ui.CarCircleActivity_
+ADDED from AndroidManifest.xml:169:9
+	android:label
+		ADDED from AndroidManifest.xml:171:13
+	android:name
+		ADDED from AndroidManifest.xml:170:13
+activity#com.xmyunyou.wcd.ui.circle.DiscussDetailActivity_
+ADDED from AndroidManifest.xml:173:9
+	android:label
+		ADDED from AndroidManifest.xml:175:13
+	android:name
+		ADDED from AndroidManifest.xml:174:13
+activity#com.xmyunyou.wcd.ui.user.UserIndexActivity_
+ADDED from AndroidManifest.xml:177:9
+	android:label
+		ADDED from AndroidManifest.xml:179:13
+	android:name
+		ADDED from AndroidManifest.xml:178:13
+activity#com.xmyunyou.wcd.ui.circle.SendTopicActivity_
+ADDED from AndroidManifest.xml:181:9
+	android:label
+		ADDED from AndroidManifest.xml:183:13
+	android:name
+		ADDED from AndroidManifest.xml:182:13
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:support-v4:21.0.3:15:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0

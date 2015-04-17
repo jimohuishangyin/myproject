@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_title">
+
+        <TextView
+            android:id="@+id/circle_sign"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_circle_sign"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="签到"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main_title"
+            />
+
+        <TextView
+            android:id="@+id/circle_write_topic"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_circle_sign"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="发帖"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#34373B"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/circle_square"
+                style="@style/main_tab_text"
+                android:tag="3"
+                android:checked="true"
+                android:text="社区广场" />
+
+            <RadioButton
+                android:id="@+id/circle_show"
+                style="@style/main_tab_text"
+                android:tag="2"
+                android:text="爱车秀" />
+
+            <RadioButton
+                android:id="@+id/circle_discuss"
+                style="@style/main_tab_text"
+
+                android:tag="1"
+                android:text="改装讨论" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/circle_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_title"
+            android:scaleType="matrix" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_title" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/circle_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

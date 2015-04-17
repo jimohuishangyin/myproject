@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TagView -->
+    <declare-styleable name="TextLabelView">
+        <!-- item之间的间距 -->
+        <attr name="itemSpacing" format="integer" />
+        <!-- 行间距 -->
+        <attr name="verticalSpacing" format="integer" />
+        <!-- item和行间距 -->
+        <attr name="margin" format="integer" />
+        <!-- view的布局 -->
+        <attr name="gravity">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="horizontal" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LoadMoreGridView">
+        <attr name="numColumns" format="integer" />
+        <attr name="item_margin" format="integer" />
+        <attr name="hasHeadView" format="boolean" />
+    </declare-styleable>
+
+</resources>

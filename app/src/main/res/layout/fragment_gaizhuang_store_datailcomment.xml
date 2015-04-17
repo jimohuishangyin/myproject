@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xmyunyou.wcd.ui.view.LoadMoreListView
+            android:id="@+id/gaizhuang_store_ditail_comment"
+            style="@style/common_list" />
+
+        <LinearLayout
+            android:id="@+id/submit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/store_comment_bg"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/shopcommentbtbg"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="发表评论"
+                android:textColor="#CDCDCD"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/store_comment_gery"
+                android:textColor="@color/bg_title"
+                android:text=""/>
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

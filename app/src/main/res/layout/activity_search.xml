@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f90539"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back_ico" />
+
+        <TextView
+            android:id="@+id/choose_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_search"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="选择车型"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/search_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search_wihte"
+                android:hint="请输入关键字"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/search_click"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_input" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="热门车型"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <com.xmyunyou.wcd.ui.view.LoadMoreGridView
+            android:id="@+id/search_hot_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:numColumns="2"
+            app:item_margin="10"
+             />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!--<LinearLayout
+        android:id="@+id/search_car_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/carline_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search_car_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/default_icon" />
+
+            <LinearLayout
+                android:id="@+id/products_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.xmyunyou.wcd.ui.view.TextLabelView
+                    android:id="@+id/search_model_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></com.xmyunyou.wcd.ui.view.TextLabelView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/search_turing"
+                    style="@style/search_tab_text"
+                    android:checked="true"
+                    android:tag="1"
+                    android:text="改装实战" />
+
+                <RadioButton
+                    android:id="@+id/search_care"
+                    style="@style/search_tab_text"
+                    android:tag="2"
+                    android:text="保养维修" />
+
+                <RadioButton
+                    android:id="@+id/search_girl"
+                    style="@style/search_tab_text"
+                    android:tag="3"
+                    android:text="香车美女" />
+
+                <RadioButton
+                    android:id="@+id/search_video"
+                    style="@style/search_tab_text"
+                    android:tag="4"
+                    android:text="玩车视频" />
+
+                <RadioButton
+                    android:id="@+id/search_motorzine"
+                    style="@style/search_tab_text"
+                    android:tag="5"
+                    android:text="车讯" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/search_cursor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="@color/bg_title"
+                android:scaleType="matrix" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="@color/search_bg_title" />
+
+        <FrameLayout
+            android:id="@+id/content_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            ></FrameLayout>
+    </LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.xmyunyou.wcd.ui.view.LoadMoreListView
+            android:id="@+id/search_list"
+            style="@style/common_list"
+            android:visibility="gone"
+            ></com.xmyunyou.wcd.ui.view.LoadMoreListView>
+
+        </LinearLayout>
+</LinearLayout>

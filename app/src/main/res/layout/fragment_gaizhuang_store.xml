@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:id="@+id/gaizhuang_store_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gaizhuang_storerecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="厦门地区推荐商家" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scrollbars="none">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="400dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.xmyunyou.wcd.ui.view.ShowGridView
+                                android:id="@+id/gaizhuang_storerecommend_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:listSelector="@null"
+                                android:minWidth="60dp" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+
+            <com.xmyunyou.wcd.ui.view.LoadMoreView
+                android:id="@+id/gaizhuang_store_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+</LinearLayout>

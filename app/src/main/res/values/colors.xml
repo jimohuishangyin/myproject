@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_title">#EE0039</color>
+    <color name="list_line">#E2E2E2</color>
+    <color name="dialog_title">#1C1E20</color>
+    <color name="dialog_text">#686868</color>
+    <color name="bg_dialog">#F3F3F3</color>
+    <color name="search_bg_title">#646464</color>
+    <color name="search_bg">#F3F1F2</color>
+    <color name="search_text">#F0AB4E</color>
+    <color name="bg_title_no">#757575</color>
+    <color name="gaizhuang_stop_text_selected">#1B8FCB</color>
+    <color name="gaizhuang_stop_text">#0C0C0C</color>
+<!--tab 字体色值-->
+    <color name="tab_text_selected">#f90539</color>
+    <color name="tab_text">#666666</color>
+
+    <color name="user_info_tab_color">#D9D9D9</color>
+
+    <color name="write_text_normal">#E45D7D</color>
+
+    <!--标签背景色-->
+
+    <color name="color1">#17B5FF</color>
+    <color name="color2">#18DF5F</color>
+    <color name="color3">#F93E3E</color>
+    <color name="color4">#FF790D</color>
+    <color name="color5">#C152F0</color>
+    <color name="color6">#5D7A85</color>
+    <color name="color7">#15A6B3</color>
+    <color name="color8">#35404E</color>
+    <color name="color9">#F54F7E</color>
+    <color name="color10">#0C48E0</color>
+    <color name="color11">#F2B600</color>
+    <color name="color12">#7484D5</color>
+    <color name="color13">#8AC927</color>
+    <color name="color14">#848483</color>
+    <color name="color15">#EC5D5D</color>
+    <color name="color16">#25B9DE</color>
+    <color name="color17">#8C6C94</color>
+    <color name="color18">#809F9F</color>
+    <color name="color19">#F3C9D5</color>
+    <color name="color20">#068413</color>
+    <color name="color21">#17B5FF</color>
+    <color name="color22">#18DF5F</color>
+    <color name="color23">#F93E3E</color>
+    <color name="color24">#FF790D</color>
+
+
+    <color name="black">#000000</color>
+
+    <color name="record_mothed">#6E9BB3</color>
+    <color name="record_time">#B2B2B2</color>
+    <color name="record_jifen_red">#F90539</color>
+    <color name="record_jifen_green">#65C66D</color>
+
+</resources>

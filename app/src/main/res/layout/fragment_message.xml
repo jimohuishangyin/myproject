@@ -1,0 +1,24 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:id="@+id/message_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.xmyunyou.wcd.ui.view.LoadMoreGridView
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            app:numColumns="2"
+            app:item_margin="10"
+             />
+
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

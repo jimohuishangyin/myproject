@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"/>
+
+    <!--导航-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#34373B"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fav_Article"
+                style="@style/main_tab_text"
+                android:text="文章收藏"
+                android:checked="true"
+                android:tag="1"
+                />
+
+            <RadioButton
+                android:id="@+id/fav_posts"
+                style="@style/main_tab_text"
+                android:text="帖子收藏"
+                android:tag="2"
+                />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/fav_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/bg_title"
+            android:layout_gravity="bottom"
+            android:scaleType="matrix" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_title" />
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fav_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:flipInterval="30"
+        android:layout_weight="1"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

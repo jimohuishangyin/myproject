@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adapter_brod"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/gaizhuang_production_pic"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_icon" />
+
+        <TextView
+            android:id="@+id/gaizhuang_production_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="SCC汽车养护中心中心将面对社会各界贤达人士和SCC会员"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/gaizhuang_production_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ico_view"
+            android:drawablePadding="5dp"
+            android:text="2145"
+            android:textColor="#B1B1B1"
+            android:textSize="12sp"/>
+
+
+            <TextView
+                android:id="@+id/gaizhuang_production_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ico_comment"
+                android:drawablePadding="5dp"
+                android:text="2145"
+                android:textColor="#B1B1B1"
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

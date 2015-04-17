@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <script src="http://www.wanchezhijia.com/js/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <title></title>
+    <style type="text/css">
+        * {
+            /* default */
+            color: #000;
+            /* default */
+            font-size: 16px;
+        }
+
+        a {
+            /* default */
+            color: #0ca1d1;
+            text-decoration: none;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        body {
+            /* default */
+            background-color: #fff;
+            width: 98%;
+            margin-left:auto;
+            margin-right:auto;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        embed, object {
+            display: none;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #000;
+            padding-bottom: 5px;
+        }
+
+        .datetime {
+            font-size: 13px;
+            color: #999;
+            margin: 10px;
+            line-height: 20px;
+            float: left;
+        }
+
+
+
+
+        p img {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+        .body{
+            margin-top:10px;
+            margin-bottom:10px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .body img{
+            margin-bottom:10px;
+            width:100%;
+            height:auto;
+        }
+        .body h2{
+            display:none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">[title]</div>
+    <div>
+        <div class="datetime">[date]</div>
+        <div style="clear: right;"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="body">
+        [body]
+    </div>
+    <div style="width: 100px; height: 10px;"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.ke-pagebreak').hide();
+            //window.external.notify('loaded');
+        });
+    </script>
+</body>
+</html>

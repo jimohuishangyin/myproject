@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">玩车之家</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_news_list">NewsListActivity</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+    <string name="title_activity_article_video_detail">ArticleVideoDetailActivity</string>
+    <string name="title_activity_pic_detail">PicDetailActivity</string>
+
+    <string name="login_reg"><u>还没有账号？立即注册</u></string>
+    <string name="btn_register"><u>找回密码</u></string>
+
+    <string name="title_activity_car_circle">CarCircleActivity</string>
+    <string name="title_activity_discuss_detail">DiscussDetailActivity</string>
+    <string name="sign_text">我签到我光荣,小手一抖积分带走,既来之则签之,每天必须签个到,签到能赚积分,天天玩车天天签到 </string>
+    <string name="title_activity_user_index">UserIndexActivity</string>
+    <string name="title_activity_send_topic">SendTopicActivity</string>
+</resources>

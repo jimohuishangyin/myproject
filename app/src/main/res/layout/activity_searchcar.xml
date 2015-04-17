@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.xmyunyou.wcd.ui.view.TopScrollView
+            android:id="@+id/search_car_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/pic_image_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/search_car_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_icon" />
+
+                    <LinearLayout
+                        android:id="@+id/products_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+
+                        android:paddingRight="5dp">
+
+                        <com.xmyunyou.wcd.ui.view.TextLabelView
+                            android:id="@+id/search_model_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:paddingTop="5dp"
+                            app:margin="10"></com.xmyunyou.wcd.ui.view.TextLabelView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#34373B"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/search_turing"
+                            style="@style/main_tab_text"
+                            android:checked="true"
+                            android:tag="1"
+                            android:text="改装" />
+
+                        <RadioButton
+                            android:id="@+id/search_care"
+                            style="@style/main_tab_text"
+                            android:tag="2"
+                            android:text="养护" />
+
+                        <RadioButton
+                            android:id="@+id/search_video"
+                            style="@style/main_tab_text"
+                            android:tag="3"
+                            android:text="美图" />
+
+                        <RadioButton
+                            android:id="@+id/search_girl"
+                            style="@style/main_tab_text"
+                            android:tag="4"
+                            android:text="视频" />
+
+                        <RadioButton
+                            android:id="@+id/search_message"
+                            style="@style/main_tab_text"
+                            android:tag="5"
+                            android:text="车讯" />
+
+                    </RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/search_cursor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/bg_title"
+                        android:scaleType="matrix" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/bg_title" />
+
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/search_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:persistentDrawingCache="animation" />
+            </LinearLayout>
+        </com.xmyunyou.wcd.ui.view.TopScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/search_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#34373B"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/search_turing1"
+                    style="@style/main_tab_text"
+                    android:checked="true"
+                    android:tag="1"
+                    android:text="改装" />
+
+                <RadioButton
+                    android:id="@+id/search_care1"
+                    style="@style/main_tab_text"
+                    android:tag="2"
+                    android:text="养护" />
+
+                <RadioButton
+                    android:id="@+id/search_video1"
+                    style="@style/main_tab_text"
+                    android:tag="3"
+                    android:text="美图" />
+
+                <RadioButton
+                    android:id="@+id/search_girl1"
+                    style="@style/main_tab_text"
+                    android:tag="4"
+                    android:text="视频" />
+
+                <RadioButton
+                    android:id="@+id/search_message1"
+                    style="@style/main_tab_text"
+                    android:tag="5"
+                    android:text="车讯" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/search_cursor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/bg_title"
+                    android:scaleType="matrix" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/bg_title" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

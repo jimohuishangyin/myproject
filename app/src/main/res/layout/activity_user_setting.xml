@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/settings_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/feedback_item_text"
+                android:text="修改密码"
+                />
+
+            <ImageView
+                style="@style/feedback_item"
+                 />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/settings_version"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/feedback_item_text"
+                android:text="版本检测"
+                 />
+
+            <ImageView
+                style="@style/feedback_item"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/settings_opinion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/feedback_item_text"
+                android:text="意见反馈"
+                />
+
+            <ImageView
+                style="@style/feedback_item"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/settings_about"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/feedback_item_text"
+                android:text="关于我们"
+                />
+
+            <ImageView
+                style="@style/feedback_item"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/cancel_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#f90539"
+        android:text="注销登录"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

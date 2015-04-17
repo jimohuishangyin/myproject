@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <com.xmyunyou.wcd.ui.view.MyScrollView
+        android:id="@+id/gaizhuang_server_srcollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xmyunyou.wcd.ui.view.LoadMoreView
+            android:id="@+id/gaizhuang_server_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.xmyunyou.wcd.ui.view.MyScrollView>
+</LinearLayout>
